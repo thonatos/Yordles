@@ -1,0 +1,12 @@
+{
+  "name": "yordles",
+  "version": "0.1.0",
+  "description": "Anothter isomorphic framework for server-rendered React apps",
+  "main": "index.js",
+  "scripts": {
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md"
+  },
+  "repository": "git@github.com:thonatos/Yordles.git",
+  "author": "Suyi <heqiang.yhq@alibaba-inc.com>",
+  "license": "MIT"
+}
