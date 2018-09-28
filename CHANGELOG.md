@@ -1,3 +1,13 @@
+<a name="0.1.1-4"></a>
+## [0.1.1-4](https://github.com/thonatos/Yordles/compare/v0.1.1-3...v0.1.1-4) (2018-09-28)
+
+
+### Bug Fixes
+
+* include .babelrc ([4121db4](https://github.com/thonatos/Yordles/commit/4121db4))
+
+
+
 <a name="0.1.1-3"></a>
 ## [0.1.1-3](https://github.com/thonatos/Yordles/compare/v0.1.1-2...v0.1.1-3) (2018-09-28)
 
