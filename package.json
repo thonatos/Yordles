@@ -15,7 +15,7 @@
     "ci": "npm run lint && egg-bin pkgfiles --check && npm run cov",
     "autod": "autod",
     "pkgfiles": "egg-bin pkgfiles",
-    "postinstall": "./scripts/postinstall.js",
+    "postinstall": "node ./scripts/postinstall.js",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md"
   },
   "dependencies": {
