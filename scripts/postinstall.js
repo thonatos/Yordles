@@ -1,28 +1,44 @@
 const fs = require('fs-extra');
 const path = require('path');
 
-const workspace = process.cwd();
+const cwd = process.cwd();
+const workspace = path.normalize(cwd.slice(0, cwd.lastIndexOf('node_modules')));
+
 const nodeModule = path.join(workspace, 'node_modules/yordles');
 
-const files = [
-  '.babelrc',
-  'webpack.config.js',
-  'postcss.config.js',
-  'test/fixtures/example/app/web/',
-];
+console.log(workspace);
 
-console.log('[Yordles] inject');
+function copyFiles() {
+  const files = [
+    '.babelrc',
+    'webpack.config.js',
+    'postcss.config.js',
+    'app/web/',
+  ];
 
-files.forEach(f => {
-  const src = path.join(nodeModule, f);
-  const target = path.join(workspace, f);
+  files.forEach(f => {
+    const src = path.join(nodeModule, f);
+    let target = path.join(workspace, f);
 
-  if (f.startsWith('test')) {
-    fs.copySync(src, path.join(workspace, 'app/web'));
-    return;
-  }
+    if (fs.pathExistsSync(target)) {
+      target = path.join(workspace, '_' + f);
+    }
 
-  fs.copySync(src, target);
-});
+    console.log('[copy]', f, target);
 
-console.log('[Yordles] inject done.');
+    if (f.startsWith('app/web/')) {
+      fs.copySync(path.join(nodeModule, 'test/fixtures/example/' + f), target);
+      return;
+    }
+
+    fs.copySync(src, target);
+  });
+}
+
+function inject() {
+  console.log('[Yordles] inject');
+  copyFiles();
+  console.log('[Yordles] inject done. Remenber filename with "_${fileName}".');
+}
+
+inject();

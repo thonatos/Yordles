@@ -65,6 +65,7 @@
     "test",
     "config",
     "scripts",
+    ".babelrc",
     "postcss.config.js",
     "webpack.config.js"
   ],
