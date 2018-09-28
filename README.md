@@ -13,6 +13,45 @@ Anothter isomorphic framework for server-rendered React apps.
 ## TODO
 > Coming soon.
 
+## Usage
+
+- init
+
+```bash
+$ npm i egg-init -g
+$ egg-init egg-example --type=simple
+$ cd egg-example
+$ npm i
+```
+
+- update
+
+```json
+// package.json
+{
+ "scripts": {
+    "build": "cross-env NODE_ENV=production easywebpack build prod",
+    "dev": "egg-bin dev",
+  },
+  "egg": {
+    "framework": "yordles"
+  },
+}
+```
+
+- run
+
+```bash
+
+# dev
+$ npm run dev
+
+# product
+$ npm run build
+$ npm start
+```
+
+
 
 ## How to Contribute
 
