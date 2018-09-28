@@ -1,7 +1,6 @@
 # Yordles
 
-> Opinions differ as to where exactly the land of the Yordles is to be found. Some maintain these fey creatures live far to the southeast, beyond a range of impassable mountains. Others claim the Yordles live under grassy green hills or deep in the hearts of impenetrable forests.     ——《League Of Legends》
-
+> Opinions differ as to where exactly the land of the Yordles is to be found. Some maintain these fey creatures live far to the southeast, beyond a range of impassable mountains. Others claim the Yordles live under grassy green hills or deep in the hearts of impenetrable forests. ——《League Of Legends》
 
 Anothter isomorphic framework for server-rendered React apps.
 
@@ -11,7 +10,8 @@ Anothter isomorphic framework for server-rendered React apps.
 [npm-url]: https://www.npmjs.com/package/yordles
 
 ## TODO
-> Coming soon.
+
+> add example, docs.
 
 ## Usage
 
@@ -24,25 +24,30 @@ $ cd egg-example
 $ npm i
 ```
 
+- install
+
+```bash
+$ npm install --save yordles
+```
+
 - update
 
 ```json
 // package.json
 {
- "scripts": {
+  "scripts": {
     "build": "cross-env NODE_ENV=production easywebpack build prod",
-    "dev": "egg-bin dev",
+    "dev": "egg-bin dev"
   },
   "egg": {
     "framework": "yordles"
-  },
+  }
 }
 ```
 
 - run
 
 ```bash
-
 # dev
 $ npm run dev
 
@@ -50,8 +55,6 @@ $ npm run dev
 $ npm run build
 $ npm start
 ```
-
-
 
 ## How to Contribute
 
