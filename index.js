@@ -1,3 +1,3 @@
-module.exports = {
-  name: 'Yordles'
-};
+'use strict';
+
+module.exports = require('./lib/framework.js');

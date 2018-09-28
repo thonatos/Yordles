@@ -1,0 +1,5 @@
+# custom
+config/manifest.json
+app/view/
+public/
+run/

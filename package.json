@@ -1,12 +1,85 @@
 {
   "name": "yordles",
-  "version": "0.1.1-0",
+  "version": "0.1.1-5",
   "description": "Anothter isomorphic framework for server-rendered React apps",
+  "keywords": [
+    "egg",
+    "egg-framework"
+  ],
   "main": "index.js",
   "scripts": {
+    "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && egg-bin pkgfiles --check && npm run cov",
+    "autod": "autod",
+    "pkgfiles": "egg-bin pkgfiles",
+    "postinstall": "node ./scripts/postinstall.js",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md"
   },
+  "dependencies": {
+    "autoprefixer": "^9.1.5",
+    "easywebpack-react": "^4.2.0",
+    "egg": "^2.11.2",
+    "egg-view-react-ssr": "^2.3.1",
+    "egg-webpack": "^4.3.1",
+    "egg-webpack-react": "^2.0.2",
+    "fs-extra": "^7.0.0"
+  },
+  "devDependencies": {
+    "autod": "^3.0.1",
+    "autod-egg": "^1.0.0",
+    "autoprefixer": "^9.1.5",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-import": "^1.8.0",
+    "babel-plugin-root-import": "^6.1.0",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.5",
+    "babel-plugin-transform-object-assign": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "easywebpack-cli": "^3.11.3",
+    "easywebpack-react": "^4.2.0",
+    "egg-bin": "^4.9.0",
+    "egg-ci": "^1.9.2",
+    "egg-mock": "^3.20.1",
+    "egg-webpack": "^4.3.1",
+    "egg-webpack-react": "^2.0.2",
+    "eslint": "^5.6.0",
+    "eslint-config-egg": "^7.1.0",
+    "eslint-plugin-react": "^7.11.1",
+    "html-webpack-plugin": "^3.2.0",
+    "less": "^3.8.1",
+    "less-loader": "^4.1.0",
+    "postcss-less": "^2.0.0",
+    "postcss-scss": "^2.0.0",
+    "react-hot-loader": "^4.3.11",
+    "webstorm-disable-index": "^1.2.0"
+  },
+  "files": [
+    "index.js",
+    "app",
+    "lib",
+    "test",
+    "config",
+    "scripts",
+    ".babelrc",
+    "postcss.config.js",
+    "webpack.config.js"
+  ],
+  "eslintIgnore": [
+    "coverage",
+    "dist"
+  ],
+  "ci": {
+    "version": "8, 9"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
   "repository": "git@github.com:thonatos/Yordles.git",
-  "author": "Suyi <heqiang.yhq@alibaba-inc.com>",
+  "author": "Suyi <thonatos.yang@gmail.com>",
   "license": "MIT"
 }
