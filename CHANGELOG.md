@@ -1,3 +1,13 @@
+<a name="0.1.1-2"></a>
+## [0.1.1-2](https://github.com/thonatos/Yordles/compare/v0.1.1-1...v0.1.1-2) (2018-09-28)
+
+
+### Bug Fixes
+
+* add scripts ([a402775](https://github.com/thonatos/Yordles/commit/a402775))
+
+
+
 <a name="0.1.1-1"></a>
 ## [0.1.1-1](https://github.com/thonatos/Yordles/compare/v0.1.1-0...v0.1.1-1) (2018-09-28)
 
