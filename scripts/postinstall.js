@@ -1,8 +1,10 @@
+#!/usr/bin/env node
+
 const fs = require('fs-extra');
 const path = require('path');
 
 const workspace = process.cwd();
-const nodeModule = path.join(cwd, 'node_modules/yordles');
+const nodeModule = path.join(workspace, 'node_modules/yordles');
 
 const files = [
   '.babelrc',

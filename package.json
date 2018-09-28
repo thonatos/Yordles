@@ -15,7 +15,7 @@
     "ci": "npm run lint && egg-bin pkgfiles --check && npm run cov",
     "autod": "autod",
     "pkgfiles": "egg-bin pkgfiles",
-    "postinstall": "./",
+    "postinstall": "./scripts/postinstall.js",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md"
   },
   "dependencies": {
@@ -60,12 +60,13 @@
   },
   "files": [
     "index.js",
-    "lib",
     "app",
-    "config",
+    "lib",
     "test",
-    "postcss.config.js",
+    "config",
     "scripts",
+    ".babelrc",
+    "postcss.config.js",
     "webpack.config.js"
   ],
   "eslintIgnore": [
