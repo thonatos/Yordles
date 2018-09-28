@@ -1,6 +1,6 @@
 {
   "name": "yordles",
-  "version": "0.1.1-2",
+  "version": "0.1.1-3",
   "description": "Anothter isomorphic framework for server-rendered React apps",
   "keywords": [
     "egg",

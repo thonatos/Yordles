@@ -1,3 +1,13 @@
+<a name="0.1.1-3"></a>
+## [0.1.1-3](https://github.com/thonatos/Yordles/compare/v0.1.1-2...v0.1.1-3) (2018-09-28)
+
+
+### Bug Fixes
+
+* postinstall error ([1b304c6](https://github.com/thonatos/Yordles/commit/1b304c6))
+
+
+
 <a name="0.1.1-2"></a>
 ## [0.1.1-2](https://github.com/thonatos/Yordles/compare/v0.1.1-1...v0.1.1-2) (2018-09-28)
 
