@@ -14,6 +14,12 @@ Anothter isomorphic framework for server-rendered React apps.
 > Coming soon.
 
 
+## How to Contribute
+
+Please let us know how can we help. Do check out [issues](https://github.com/eggjs/egg/issues) for bug reports or suggestions first.
+
+To become a contributor, please follow our [contributing guide](CONTRIBUTING.md).
+
 ## License
 
 [MIT](LICENSE)
