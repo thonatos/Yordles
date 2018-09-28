@@ -1,0 +1,33 @@
+{
+  "env": {
+    "es6": true,
+    "commonjs": true,
+    "browser": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": [
+    "react"
+  ],
+  "extends": [
+    "eslint-config-egg",
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "rules": {
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"],
+    "no-console": "off"
+  },
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "16.5.1"
+    }    
+  }
+}
