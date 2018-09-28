@@ -1,3 +1,13 @@
+<a name="0.1.1-5"></a>
+## [0.1.1-5](https://github.com/thonatos/Yordles/compare/v0.1.1-4...v0.1.1-5) (2018-09-28)
+
+
+### Bug Fixes
+
+* workspace error ([c97f82e](https://github.com/thonatos/Yordles/commit/c97f82e))
+
+
+
 <a name="0.1.1-4"></a>
 ## [0.1.1-4](https://github.com/thonatos/Yordles/compare/v0.1.1-3...v0.1.1-4) (2018-09-28)
 
