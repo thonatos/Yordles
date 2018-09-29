@@ -44,7 +44,7 @@ const COPY_FILES = [
   'app/web/',
 ];
 
-const ENSURE_DIRS = ['app/view'];
+const ENSURE_DIRS = ['app/view/.gitkeep'];
 
 function copyFiles() {
   COPY_FILES.forEach(f => {
@@ -71,7 +71,7 @@ function ensureDir() {
     let target = path.join(workspace, d);
 
     if (fs.pathExistsSync(target)) {
-      fs.ensureDirSync(target);
+      fs.ensureFileSync(target);
     }
   });
 }
@@ -83,7 +83,9 @@ function updatePackageJSON() {
   const pkg = fs.readJsonSync(pkgFile);
 
   // backup
-  fs.writeJsonSync(backup, pkg);
+  fs.writeJsonSync(backup, pkg, {
+    spaces: 2,
+  });
 
   extend(pkg, {
     dependencies: DEPS,
@@ -91,18 +93,25 @@ function updatePackageJSON() {
     scripts: {
       build: 'cross-env NODE_ENV=production easywebpack build prod',
     },
+    egg: {
+      framework: 'yordles',
+    },
   });
 
   // update
-  fs.writeJsonSync(pkgFile, pkg);
+  fs.writeJsonSync(pkgFile, pkg, {
+    spaces: 2,
+  });
 }
 
 function inject() {
-  console.log('[Yordles] inject');
+  console.log('[Yordles] inject config.');
   copyFiles();
   ensureDir();
+
+  console.log('[Yordles] update deps.');
   updatePackageJSON();
-  console.log('[Yordles] inject done. Remenber filename with "_${fileName}".');
+  console.log('[Yordles] done. Remenber replace files in "__REPLACE__/"');
 }
 
 inject();
