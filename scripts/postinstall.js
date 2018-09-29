@@ -78,7 +78,13 @@ function ensureDir() {
 
 function updatePackageJSON() {
   const pkgFile = path.join(workspace, 'package.json');
+  const backup = path.join(workspace, '_package.json');
+
   const pkg = fs.readJsonSync(pkgFile);
+
+  // backup
+  fs.writeJsonSync(backup, pkg);
+
   extend(pkg, {
     dependencies: DEPS,
     devDependencies: DEPS_DEV,
@@ -86,6 +92,8 @@ function updatePackageJSON() {
       build: 'cross-env NODE_ENV=production easywebpack build prod',
     },
   });
+
+  // update
   fs.writeJsonSync(pkgFile, pkg);
 }
 
