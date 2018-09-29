@@ -179,3 +179,13 @@ All tags mentioned above refere to adding tags from npm in `package.json`.
 [node CHANGELOG]: https://github.com/nodejs/node/blob/master/CHANGELOG.md
 [1.x milestone]: https://github.com/eggjs/egg/milestone/1
 [『我是如何发布一个 npm 包的』]: https://fengmk2.com/blog/2016/how-i-publish-a-npm-package
+
+## Contributors
+
+Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+| [<img src="https://avatars2.githubusercontent.com/u/958063?v=4" width="60px;"/><br /><sub><b>Suyi</b></sub>](https://www.thonatos.com)<br />[💻](https://github.com/Suyi/Yordles/commits?author=thonatos "Code") | [<img src="https://avatars2.githubusercontent.com/u/4983042?v=4" width="60px;"/><br /><sub><b>sky</b></sub>](https://yuque.com/hubcarl)<br />[💻](https://github.com/Suyi/Yordles/commits?author=hubcarl "Code") | [<img src="https://avatars2.githubusercontent.com/u/16814336?v=4" width="60px;"/><br /><sub><b>ZhengFang</b></sub>](https://github.com/Foveluy)<br />[📢](#talk-Foveluy "Talks") |
+| :---: | :---: | :---: |
+<!-- ALL-CONTRIBUTORS-LIST:END -->
