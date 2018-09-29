@@ -1,6 +1,6 @@
 {
   "name": "yordles",
-  "version": "0.1.1-5",
+  "version": "0.1.1-6",
   "description": "Anothter isomorphic framework for server-rendered React apps",
   "keywords": [
     "egg",
@@ -25,11 +25,11 @@
     "egg-view-react-ssr": "^2.3.1",
     "egg-webpack": "^4.3.1",
     "egg-webpack-react": "^2.0.2",
-    "fs-extra": "^7.0.0",        
+    "fs-extra": "^7.0.0",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
     "react-router": "^4.3.1",
-    "react-router-dom": "4.3.1"    
+    "react-router-dom": "4.3.1"
   },
   "devDependencies": {
     "autod": "^3.0.1",
