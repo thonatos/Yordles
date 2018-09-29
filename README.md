@@ -30,7 +30,34 @@ $ npm i
 $ npm install --save yordles
 ```
 
-- run
+> Please update your rules or configiration for eslint/postcss/webpack. files can be found under `__REPLACE__/`.
+
+- update deps
+
+```bash
+$ npm i
+```
+
+- change controller
+
+```js
+'use strict';
+
+const Controller = require('egg').Controller;
+
+class HomeController extends Controller {
+  async index() {
+    const { ctx } = this;
+    await ctx.render('home/index.js', {
+      msg: 'Hello Yordles.',
+    });
+  }
+}
+
+module.exports = HomeController;
+```
+
+- run app
 
 ```bash
 # dev
