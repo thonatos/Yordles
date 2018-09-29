@@ -15,7 +15,7 @@ Anothter isomorphic framework for server-rendered React apps.
 
 ## Usage
 
-- init
+- init egg
 
 ```bash
 $ npm i egg-init -g
@@ -24,25 +24,10 @@ $ cd egg-example
 $ npm i
 ```
 
-- install
+- install yordles
 
 ```bash
 $ npm install --save yordles
-```
-
-- update
-
-```json
-// package.json
-{
-  "scripts": {
-    "build": "cross-env NODE_ENV=production easywebpack build prod",
-    "dev": "egg-bin dev"
-  },
-  "egg": {
-    "framework": "yordles"
-  }
-}
 ```
 
 - run
