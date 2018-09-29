@@ -70,7 +70,7 @@ function ensureDir() {
   ENSURE_DIRS.forEach(d => {
     let target = path.join(workspace, d);
 
-    if (fs.pathExistsSync(target)) {
+    if (!fs.pathExistsSync(target)) {
       fs.ensureFileSync(target);
     }
   });
