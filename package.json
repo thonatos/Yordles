@@ -16,7 +16,9 @@
     "autod": "autod",
     "pkgfiles": "egg-bin pkgfiles",
     "postinstall": "node ./scripts/postinstall.js",
-    "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md"
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
+    "contributors:add": "all-contributors add",
+    "contributors:generate": "all-contributors generate"
   },
   "dependencies": {
     "deep-extend": "^0.6.0",
@@ -28,6 +30,7 @@
     "fs-extra": "^7.0.0"
   },
   "devDependencies": {
+    "all-contributors-cli": "^5.4.0",
     "autod": "^3.0.1",
     "autod-egg": "^1.0.0",
     "egg-bin": "^4.9.0",
