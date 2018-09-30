@@ -42,6 +42,8 @@ const COPY_FILES = [
   'webpack.config.js',
   'postcss.config.js',
   'app/web/',
+  'app/controller/yordles.js',
+  'app/router.js',
 ];
 
 const ENSURE_DIRS = ['app/view/.gitkeep'];
@@ -57,7 +59,7 @@ function copyFiles() {
 
     console.log('[copy]', f, target);
 
-    if (f.startsWith('app/web/')) {
+    if (f.startsWith('app/')) {
       fs.copySync(path.join(nodeModule, 'test/fixtures/example/' + f), target);
       return;
     }
