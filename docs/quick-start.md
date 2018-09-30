@@ -4,14 +4,8 @@
 
 ```bash
 $ npm i egg-init -g
-$ egg-init egg-example --type=simple
-$ cd egg-example
-$ npm i
-```
-
-## Install yordles
-
-```bash
+$ egg-init mojito --type=simple
+$ cd mojito
 $ npm install --save yordles
 $ npm i
 ```
@@ -27,7 +21,7 @@ $ npm i
 
 const Controller = require('egg').Controller;
 
-class HomeController extends Controller {
+class YordlesController extends Controller {
   async index() {
     const { ctx } = this;
     await ctx.render('yordles/index.js', {
@@ -36,7 +30,7 @@ class HomeController extends Controller {
   }
 }
 
-module.exports = HomeController;
+module.exports = YordlesController;
 ```
 
 - page
@@ -45,7 +39,7 @@ module.exports = HomeController;
 import React, { Component } from 'react';
 
 import './index.css';
-export default class Home extends Component {
+export default class Yordles extends Component {
   render() {
     const { message } = this.props || {};
     return (
