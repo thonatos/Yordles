@@ -10,13 +10,17 @@ module.exports = function() {
     const state = window.__INITIAL_STATE__;
     
     const render = App => {
-      ReactDom.hydrate(
+      const renderMethod = !!module.hot ? ReactDom.render : ReactDom.hydrate;
+      renderMethod(
         EASY_ENV_IS_DEV ? <AppContainer><App {...state} /></AppContainer> : <App {...state} />,
         document.getElementById('app'));
     };
 
     if (EASY_ENV_IS_DEV && module.hot) {
-      module.hot.accept('${this.resourcePath.replace(/\\/g, '\\\\')}', () => { render(Entry) });
+      module.hot.accept('${this.resourcePath.replace(
+        /\\/g,
+        '\\\\',
+      )}', () => { render(Entry) });
     }
     render(Entry);
   `;
