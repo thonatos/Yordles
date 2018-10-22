@@ -19,6 +19,7 @@ const DEPS_DEV = {
   'babel-plugin-import': '^1.8.0',
   'babel-plugin-root-import': '^6.1.0',
   'babel-plugin-syntax-dynamic-import': '^6.18.0',
+  "babel-plugin-transform-class-properties": "^6.24.1",
   'babel-plugin-transform-decorators-legacy': '^1.3.5',
   'babel-plugin-transform-object-assign': '^6.22.0',
   'babel-plugin-transform-object-rest-spread': '^6.26.0',

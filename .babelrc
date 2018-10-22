@@ -5,9 +5,10 @@
     }]
   ],
   "plugins": [
-    "react-hot-loader/babel",
-    "transform-object-assign",
+    "react-hot-loader/babel",    
     "syntax-dynamic-import",
+    "transform-object-assign",
+    "transform-class-properties",
     "transform-decorators-legacy",
     "transform-object-rest-spread", [
       "babel-plugin-root-import",
