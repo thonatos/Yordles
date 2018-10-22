@@ -1,3 +1,13 @@
+<a name="0.1.1-12"></a>
+## [0.1.1-12](https://github.com/thonatos/Yordles/compare/v0.1.1-11...v0.1.1-12) (2018-10-22)
+
+
+### Bug Fixes
+
+* add missing transform ([c335843](https://github.com/thonatos/Yordles/commit/c335843))
+
+
+
 <a name="0.1.1-11"></a>
 ## [0.1.1-11](https://github.com/thonatos/Yordles/compare/v0.1.1-10...v0.1.1-11) (2018-09-30)
 
