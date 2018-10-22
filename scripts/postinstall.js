@@ -10,7 +10,7 @@ const DEPS = {
   react: '^16.5.1',
   'react-dom': '^16.5.1',
   'react-router': '^4.3.1',
-  'react-router-dom': '4.3.1',
+  'react-router-dom': '^4.3.1',
 };
 
 const DEPS_DEV = {
