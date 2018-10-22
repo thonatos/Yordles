@@ -1,3 +1,13 @@
+<a name="0.1.1-14"></a>
+## [0.1.1-14](https://github.com/thonatos/Yordles/compare/v0.1.1-13...v0.1.1-14) (2018-10-22)
+
+
+### Bug Fixes
+
+* fix bug ([ae8f713](https://github.com/thonatos/Yordles/commit/ae8f713))
+
+
+
 <a name="0.1.1-13"></a>
 ## [0.1.1-13](https://github.com/thonatos/Yordles/compare/v0.1.1-12...v0.1.1-13) (2018-10-22)
 
