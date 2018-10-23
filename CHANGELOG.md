@@ -1,3 +1,8 @@
+<a name="0.1.1-15"></a>
+## [0.1.1-15](https://github.com/thonatos/Yordles/compare/v0.1.1-14...v0.1.1-15) (2018-10-23)
+
+
+
 <a name="0.1.1-14"></a>
 ## [0.1.1-14](https://github.com/thonatos/Yordles/compare/v0.1.1-13...v0.1.1-14) (2018-10-22)
 
