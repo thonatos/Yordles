@@ -1,3 +1,13 @@
+<a name="0.1.1-16"></a>
+## [0.1.1-16](https://github.com/thonatos/Yordles/compare/v0.1.1-15...v0.1.1-16) (2018-10-23)
+
+
+### Bug Fixes
+
+* add easywebpack ([0bb8d5c](https://github.com/thonatos/Yordles/commit/0bb8d5c))
+
+
+
 <a name="0.1.1-15"></a>
 ## [0.1.1-15](https://github.com/thonatos/Yordles/compare/v0.1.1-14...v0.1.1-15) (2018-10-23)
 
