@@ -8,6 +8,7 @@ const nodeModule = path.join(workspace, 'node_modules/yordles');
 
 const DEPS = {
   'cross-env': '^5.2.0',
+  "easywebpack": "^4.8.5",
   'easywebpack-cli': '^4.0.1',
   'easywebpack-react': '^4.3.0',
   react: '^16.5.1',
