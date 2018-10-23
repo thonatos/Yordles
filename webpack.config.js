@@ -20,11 +20,9 @@ module.exports = {
   alias: {
     // '~': 'app/web',
   },
-  dll: ['react', 'react-dom'],
+  dll: ['react', 'react-dom', 'react-router', 'react-router-dom'],
   loaders: {
     eslint: true,
-    sass: false,
-    typescript: true,
   },
   plugins: {
     imagemini: false,

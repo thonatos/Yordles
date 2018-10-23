@@ -7,6 +7,9 @@ const workspace = path.normalize(cwd.slice(0, cwd.lastIndexOf('node_modules')));
 const nodeModule = path.join(workspace, 'node_modules/yordles');
 
 const DEPS = {
+  'cross-env': '^5.2.0',
+  'easywebpack-cli': '^4.0.1',
+  'easywebpack-react': '^4.3.0',
   react: '^16.5.1',
   'react-dom': '^16.5.1',
   'react-router': '^4.3.1',
@@ -14,21 +17,17 @@ const DEPS = {
 };
 
 const DEPS_DEV = {
+  '@babel/core': '^7.1.2',
+  '@babel/plugin-proposal-class-properties': '^7.1.0',
+  '@babel/plugin-proposal-object-rest-spread': '^7.0.0',
+  '@babel/plugin-syntax-dynamic-import': '^7.0.0',
+  '@babel/plugin-transform-object-assign': '^7.0.0',
+  '@babel/plugin-transform-runtime': '^7.1.0',
+  '@babel/preset-env': '^7.1.0',
+  '@babel/preset-react': '^7.0.0',
   autoprefixer: '^9.1.5',
   'babel-eslint': '^8.2.6',
-  'babel-plugin-add-module-exports': '^0.2.1',
-  'babel-plugin-import': '^1.9.1',
-  'babel-plugin-syntax-dynamic-import': '^6.18.0',
-  'babel-plugin-transform-class-properties': '^6.24.1',
-  'babel-plugin-transform-decorators-legacy': '^1.3.5',
-  'babel-plugin-transform-object-assign': '^6.22.0',
-  'babel-plugin-transform-object-rest-spread': '^6.26.0',
-  'babel-plugin-transform-runtime': '^6.23.0',
-  'babel-preset-env': '^1.6.0',
-  'babel-preset-react': '^6.24.1',
-  'cross-env': '^5.2.0',
-  'easywebpack-cli': '^4.0.1',
-  'easywebpack-react': '^4.3.0',
+  'babel-loader': '^8.0.4',
   'eslint-plugin-react': '^7.11.1',
   'html-webpack-plugin': '^3.2.0',
   less: '^3.8.1',
