@@ -1,3 +1,13 @@
+<a name="0.1.1-17"></a>
+## [0.1.1-17](https://github.com/thonatos/Yordles/compare/v0.1.1-16...v0.1.1-17) (2018-11-06)
+
+
+### Features
+
+* add lock ([42fda7f](https://github.com/thonatos/Yordles/commit/42fda7f))
+
+
+
 <a name="0.1.1-16"></a>
 ## [0.1.1-16](https://github.com/thonatos/Yordles/compare/v0.1.1-15...v0.1.1-16) (2018-10-23)
 
