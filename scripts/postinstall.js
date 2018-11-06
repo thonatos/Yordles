@@ -8,7 +8,7 @@ const nodeModule = path.join(workspace, 'node_modules/yordles');
 
 const DEPS = {
   'cross-env': '^5.2.0',
-  "easywebpack": "^4.8.5",
+  easywebpack: '^4.8.5',
   'easywebpack-cli': '^4.0.1',
   'easywebpack-react': '^4.3.0',
   react: '^16.5.1',
@@ -49,6 +49,8 @@ const COPY_FILES = [
 ];
 
 const ENSURE_DIRS = ['app/view/.gitkeep'];
+
+const YORDLES_LOCK = '.yordles';
 
 function copyFiles() {
   COPY_FILES.forEach(f => {
@@ -108,13 +110,29 @@ function updatePackageJSON() {
   });
 }
 
+function createLock() {
+  const lockFile = path.join(workspace, YORDLES_LOCK);
+  fs.ensureFileSync(lockFile);
+}
+
 function inject() {
+  const lockFile = path.join(workspace, YORDLES_LOCK);
+
+  if (fs.pathExistsSync(lockFile)) {
+    console.log(
+      `[Yordles] if you need update config, please remove ${YORDLES_LOCK} and try again.`,
+    );
+    return;
+  }
+
   console.log('[Yordles] inject config.');
   copyFiles();
   ensureDir();
+  createLock();
 
   console.log('[Yordles] update deps.');
   updatePackageJSON();
+
   console.log('[Yordles] done. Remenber replace files in "__REPLACE__/"');
 }
 
