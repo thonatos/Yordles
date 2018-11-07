@@ -7,9 +7,6 @@ module.exports = {
   entry: {
     include: [
       'app/web/page',
-      {
-        layout: 'app/web/framework/layout/layout.jsx?loader=false',
-      },
     ],
     exclude: [],
     loader: {
@@ -18,14 +15,24 @@ module.exports = {
     },
   },
   alias: {
-    // '~': 'app/web',
+    '~': 'app/web',
   },
   dll: ['react', 'react-dom', 'react-router', 'react-router-dom'],
   loaders: {
     eslint: true,
+    babel: {
+      include: [resolve('app/web'), resolve('node_modules')],
+    },
+    less: {
+      include: [resolve('app/web'), resolve('node_modules')],
+      options: {
+        javascriptEnabled: true,
+        modifyVars: {},
+      },
+    },    
   },
   plugins: {
-    imagemini: false,
+    imagemini: false,    
   },
 
   done() {

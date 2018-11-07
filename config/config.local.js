@@ -1,8 +1,9 @@
 'use strict';
 
+const path = require('path');
 const EasyWebpack = require('easywebpack-react');
 
-module.exports = () => {
+module.exports = app => {
   const config = {};
 
   config.development = {
@@ -12,6 +13,7 @@ module.exports = () => {
 
   config.reactssr = {
     injectCss: true,
+    layout: path.join(app.baseDir, 'app/web/view/layout.html')
   };
 
   config.webpack = {

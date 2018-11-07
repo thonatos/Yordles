@@ -8,9 +8,9 @@ const nodeModule = path.join(workspace, 'node_modules/yordles');
 
 const DEPS = {
   'cross-env': '^5.2.0',
-  easywebpack: '^4.8.5',
+  easywebpack: '^4.9.3',
   'easywebpack-cli': '^4.0.1',
-  'easywebpack-react': '^4.3.0',
+  'easywebpack-react': '^4.4.0',
   react: '^16.5.1',
   'react-dom': '^16.5.1',
   'react-router': '^4.3.1',
@@ -21,6 +21,7 @@ const DEPS_DEV = {
   '@babel/core': '^7.1.2',
   '@babel/plugin-proposal-class-properties': '^7.1.0',
   '@babel/plugin-proposal-object-rest-spread': '^7.0.0',
+  '@babel/plugin-proposal-decorators': '^7.1.2',
   '@babel/plugin-syntax-dynamic-import': '^7.0.0',
   '@babel/plugin-transform-object-assign': '^7.0.0',
   '@babel/plugin-transform-runtime': '^7.1.0',

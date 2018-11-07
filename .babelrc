@@ -1,22 +1,56 @@
 {
-  "presets": [
-    "@babel/preset-react",
-    ["@babel/preset-env", {
-      "modules": false
-    }]
-  ],
-  "plugins": [
-    "react-hot-loader/babel",
-    "@babel/plugin-transform-object-assign",
-    "@babel/plugin-syntax-dynamic-import",
-    "@babel/plugin-proposal-object-rest-spread",
-    "@babel/plugin-proposal-class-properties",
-    ["@babel/plugin-transform-runtime",
-      {
-        "helpers": true,
-        "regenerator": true
-      }
-    ]
-  ],
+  "env": {
+    "node": {      
+      "presets": [
+        "@babel/preset-react",
+        ["@babel/preset-env", {
+          "modules": false          
+        }]
+      ],      
+      "plugins": [
+        "@babel/plugin-transform-object-assign",
+        "@babel/plugin-syntax-dynamic-import",
+        "@babel/plugin-proposal-object-rest-spread",
+        ["@babel/plugin-proposal-decorators", {
+          "legacy": true
+        }],
+        ["@babel/plugin-proposal-class-properties", {
+          "loose": true
+        }],
+        ["@babel/plugin-transform-runtime",
+          {
+            "helpers": true,
+            "regenerator": true
+          }
+        ]
+      ]
+    },
+    "web": {
+      "presets": [
+        "@babel/preset-react",
+        ["@babel/preset-env", {
+          "modules": false
+        }]
+      ],
+      "plugins": [
+        "react-hot-loader/babel",
+        "@babel/plugin-transform-object-assign",
+        "@babel/plugin-syntax-dynamic-import",
+        "@babel/plugin-proposal-object-rest-spread",
+        ["@babel/plugin-proposal-decorators", {
+          "legacy": true
+        }],
+        ["@babel/plugin-proposal-class-properties", {
+          "loose": true
+        }],
+        ["@babel/plugin-transform-runtime",
+          {
+            "helpers": true,
+            "regenerator": true
+          }
+        ]        
+      ]
+    }
+  },
   "comments": false
 }
