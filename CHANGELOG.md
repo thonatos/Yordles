@@ -1,3 +1,13 @@
+<a name="0.1.1-18"></a>
+## [0.1.1-18](https://github.com/thonatos/Yordles/compare/v0.1.1-17...v0.1.1-18) (2018-11-07)
+
+
+### Features
+
+* set open browser to false ([8cc2ec7](https://github.com/thonatos/Yordles/commit/8cc2ec7))
+
+
+
 <a name="0.1.1-17"></a>
 ## [0.1.1-17](https://github.com/thonatos/Yordles/compare/v0.1.1-16...v0.1.1-17) (2018-11-06)
 
