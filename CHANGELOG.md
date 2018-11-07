@@ -1,3 +1,13 @@
+<a name="0.1.1"></a>
+## [0.1.1](https://github.com/thonatos/Yordles/compare/v0.1.1-18...v0.1.1) (2018-11-07)
+
+
+### Features
+
+* support dynamic import ([6b49ca7](https://github.com/thonatos/Yordles/commit/6b49ca7))
+
+
+
 <a name="0.1.1-18"></a>
 ## [0.1.1-18](https://github.com/thonatos/Yordles/compare/v0.1.1-17...v0.1.1-18) (2018-11-07)
 
