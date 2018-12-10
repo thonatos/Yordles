@@ -1,5 +1,8 @@
 'use strict';
 
+const path = require('path');
+const resolve = (filepath) => path.resolve(__dirname, filepath);
+
 module.exports = {
   egg: true,
   framework: 'react',
