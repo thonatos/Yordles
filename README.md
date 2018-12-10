@@ -17,9 +17,11 @@ Another isomorphic framework for server-rendered React apps.
 
 Yordles is another customized [Egg.js](https://eggjs.org) framework.
 
-## [WIP] Documentation
+## Documentation
 
 - [Quick Start](docs/quick-start.md)
+- [Ant Design](docs/antd.md)
+- [CSS Module](docs/css-module.md)
 
 ## How to Contribute
 
