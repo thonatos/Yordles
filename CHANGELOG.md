@@ -1,3 +1,13 @@
+<a name="0.1.2"></a>
+## [0.1.2](https://github.com/thonatos/Yordles/compare/v0.1.1...v0.1.2) (2018-12-10)
+
+
+### Bug Fixes
+
+* resolve is necessary ([e5e59cb](https://github.com/thonatos/Yordles/commit/e5e59cb))
+
+
+
 <a name="0.1.1"></a>
 ## [0.1.1](https://github.com/thonatos/Yordles/compare/v0.1.1-18...v0.1.1) (2018-11-07)
 
